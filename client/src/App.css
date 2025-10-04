@@ -1,0 +1,148 @@
+/* frontend/src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.add-city {
+  margin-bottom: 30px;
+}
+
+.add-city input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 250px;
+}
+
+.add-city button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-city button:hover {
+  background-color: #2980b9;
+}
+
+.add-city button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #e74c3c;
+  margin-top: 10px;
+}
+
+.no-cities {
+  color: #7f8c8d;
+  font-style: italic;
+  margin: 40px 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.weather-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.weather-card h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.weather-main {
+  margin-bottom: 15px;
+}
+
+.temperature {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 10px 0;
+}
+
+.feels-like {
+  color: #7f8c8d;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.weather-details {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.weather-details p {
+  margin: 5px 0;
+  color: #34495e;
+}
+
+.cached-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 10px;
+  padding: 3px 6px;
+  border-radius: 10px;
+}
+
+.remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .add-city input {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
